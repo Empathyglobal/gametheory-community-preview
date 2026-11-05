@@ -16,6 +16,12 @@ Checked 2026-11-05 for this standalone community source preview.
 - About page has no scripts or external resources.
 - Source scan found no email contacts, passwords or service credentials. No live data was queried or exported.
 
+## Continuous checks
+
+GitHub Actions reruns the public source/privacy checks and 420 model sessions on pushes and pull requests. The first [CI run passed](https://github.com/Empathyglobal/gametheory-community-preview/actions/runs/42077024577) for commit `e1aa7d6c2610de2bcbf5c8825477c76bcbcdfb31` on 5 November 2026. The workflow has read-only repository permission and does not deploy the game.
+
+These automated checks exercise the released model and source restrictions. They do not compare against private source files, verify the visual interface or replace browser testing.
+
 ## Browser testing gap
 
 Full browser QA has not been completed. Chromium could not start in the verification environment because the environment rejected a required socket operation. No screenshot, actual network recording or browser interaction result is claimed.
